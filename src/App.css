@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form input,
+form textarea,
+form select,
+button {
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .task-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .task-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+button {
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.priority {
+  font-size: 12px;
+  padding: 5px;
+}
+
+.low {
+  background-color: #d3f8d3;
+}
+
+.medium {
+  background-color: #f8e2a5;
+}
+
+.high {
+  background-color: #f8a5a5;
+}
